@@ -1,6 +1,6 @@
 import re
 
-IN_FILE = "day2_in.txt"
+IN_FILE = "in.txt"
 
 colours = {"red": 0, "green": 1, "blue": 2}
 def isolate_rgb(set):
@@ -12,7 +12,6 @@ def isolate_rgb(set):
         out[colour] = count
     return out
 
-# Game 1
 print(f"\n========== Game 1 ==========")
 MAX_RED = 12
 MAX_GREEN = 13
@@ -45,7 +44,6 @@ with open(IN_FILE, "r") as file:
 print(f"Out 1: {(valid_games)}")
 print(f"Out sum 1: {sum(valid_games)}")
 
-# Game 2
 print(f"\n========== Game 2 ==========")
 game_power = []
 with open(IN_FILE, "r") as file:
